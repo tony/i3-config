@@ -41,3 +41,5 @@ Thumbs.db
 .env
 .env3
 .env2.6
+
+local_settings.json
