@@ -163,7 +163,7 @@ if my_settings.get('weather'):
 # Format:
 # Cloud connected▶Reroute to Remain
 status.register("mpd",
-                format="{title}{status}{album}",
+                format="{title} {status} {album}",
                 status={
                     "pause": "▷",
                     "play": "▶",
