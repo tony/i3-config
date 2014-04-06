@@ -1,6 +1,6 @@
 {
   "weather": {
     "location_code": "USCA0001",
-    "units": "F"
+    "units": "imperial"
   }
 }
