@@ -187,8 +187,8 @@ bar {
     status_command    python3 ~/.i3/i3pystatus_config.py
     colors {
         # solarized
-        background #073642
-        statusline #eee8d5
+        background #1B1D1E
+        statusline #A0A0A0
         focused_workspace #cb4b16 #cb4b16 #eee8d5
         active_workspace #cb4b16 #cb4b16 #eee8d5
         inactive_workspace #b58900 #b58900 #eee8d5
@@ -196,9 +196,9 @@ bar {
 }
 
 # class border backgr. text indicator
-client.focused #859900 #859900 #fdf6e3 #2e9ef4
-client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
-client.unfocused #333333 #93a1a1 #fdf6e3 #292d2e
+client.focused #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
+client.focused_inactive #1b1d1e #1b1d1e #fdf6e3 #484e50
+client.unfocused #333333 #1b1d1e #fdf6e3 #292d2e
 
 exec xsetroot -solid "#e1dce0"
 
