@@ -2,6 +2,7 @@
 # i3 config file (v4) (modified by Tony Narlock < tony at git-pull dot com >
 # =============================================================================
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Colors from https://github.com/lkraav/dotfiles/blob/master/.i3/config
 
 set $mod Mod4
 
@@ -21,10 +22,13 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtcd
 
 # kill focused window
-bindsym $mod+Shift+q kill
+# bindsym $mod+Shift+q kill
+bindsym $mod+Shift+C kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+r exec i3-dmenu-desktop --dmenu='dmenu -fn monospace:bold:size=9 -nb "#eee8d5" -nf "#073642" -sb "#dc322f" -p "> "'
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -105,7 +109,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+d reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -143,7 +147,8 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+# bindsym $mod+r mode "resize"
+bindsym $mod+Shift+z mode "resize"
 
 # =============================================================================
 # Status Bar
@@ -180,6 +185,21 @@ bar {
 
     # use i3pystatus
     status_command    python3 ~/.i3/i3pystatus_config.py
+    colors {
+        # solarized
+        background #073642
+        statusline #eee8d5
+        focused_workspace #cb4b16 #cb4b16 #eee8d5
+        active_workspace #cb4b16 #cb4b16 #eee8d5
+        inactive_workspace #b58900 #b58900 #eee8d5
+    }
 }
+
+# class border backgr. text indicator
+client.focused #859900 #859900 #fdf6e3 #2e9ef4
+client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
+client.unfocused #333333 #93a1a1 #fdf6e3 #292d2e
+
+exec xsetroot -solid "#e1dce0"
 
 # vim:filetype=i3
