@@ -19,11 +19,11 @@ class MySettings(collections.MutableMapping):
 
             >>> settings = MySettings()
             >>> settings.get("weather")
-            { "weather": { "location_code": "USCA0001", "units": "F" }}
+            { "weather": { "location_code": "USCA0001", "units": "imperial" }}
 
             >>> settings = MySettings(settings_file="/path/to/config.json")
             >>> settings.get("weather")
-            { "weather": { "location_code": "USCA0001", "units": "F" }}
+            { "weather": { "location_code": "USCA0001", "units": "imperial" }}
 
         :param settings_file: Location of JSON config file.
         :type settings_file: string
