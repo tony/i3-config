@@ -205,4 +205,8 @@ client.unfocused          #333333 #1b1d1e #fdf6e3 #292d2e
 
 exec xsetroot -solid "#e1dce0"
 
+# nitrogen background changer
+# project: https://github.com/crimsonknave/nitrogen-bg-switcher
+exec --no-startup-id nitrogen --restore
+
 # vim:filetype=i3
