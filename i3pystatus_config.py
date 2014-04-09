@@ -144,7 +144,7 @@ status.register("wireless",
 # 42/128G [86G]
 status.register("disk",
                 path="/",
-                format="{used}/{total}G [{avail}G]",)
+                format="{avail}G HD Free",)
 
 # Shows pulseaudio default sink volume
 #
