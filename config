@@ -181,12 +181,13 @@ bindsym $mod+Shift+z mode "resize"
 #     status_command    python3 ~/.i3/i3pystatus_config.py
 # }
 
+# http://i3wm.org/docs/user-contributed/conky-i3bar.html
 bar {
   # use i3status
   # status_command    i3status
 
   # use i3pystatus
-  status_command    python3 ~/.i3/i3pystatus_config.py
+  status_command        $HOME/.i3/conky-bar.sh
   colors {
     background          #181818
     statusline          #f8f8f2
@@ -208,8 +209,14 @@ client.unfocused          #333333 #1b1d1e #fdf6e3 #292d2e
 
 exec xsetroot -solid "#e1dce0"
 
+exec /usr/bin/bluetooth-applet
+exec --no-startup-id xrdb -merge ~/.Xresources
+
 # nitrogen background changer
 # project: https://github.com/crimsonknave/nitrogen-bg-switcher
 exec --no-startup-id nitrogen --restore
+
+exec --no-startup-id exec fcitx-autostart
+exec --no-startup-id exec compton
 
 # vim:filetype=i3

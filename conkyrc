@@ -1,0 +1,69 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+
+# Update interval in seconds
+update_interval 2.0
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
+short_units yes
+
+# How strict should if_up be when testing an interface for being up?
+# The value is one of up, link or address, to check for the interface
+# being solely up, being up and having link or being up, having link
+# and an assigned IP address. 
+if_up_strictness address
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+# use_spacer should have an argument of left, right, or none
+use_spacer left
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# Stuff after 'TEXT' will be formatted on screen
+TEXT
+
+# JSON for i3bar
+[
+#{ "full_text" : "RAM ${memperc}%" , "color" : ${if_match ${memperc}<90}"\#4C7899"${else}"\#4C7899"${endif} },
+ 
+#{ "full_text" : "" , "color" : "\#4C7899" },
+#{ "full_text" : " $gw_iface on ${addr ${eval $gw_iface} } " , "color" : "\#4C7899" },
+ 
+{ "full_text" : "${exec cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor} @ ${freq}MHz - ${acpitemp}°C " , "color" : ${if_match ${acpitemp}<80}"\#4C7899"${else}"\#FF173E"${endif} },
+{ "full_text" : "$processes  /$running_processes " , "color" : "\#4C7899" },
+ 
+{ "full_text" : " MEM ${memperc}% " , "color" : "\#4C7899" },
+{ "full_text" : " / ${fs_free_perc}% " , "color" : "\#4C7899" },
+ 
+{ "full_text" : "\
+${if_match "$gw_iface"=="(null)"}\
+ Network Unavailable " , "color" : "\#FF173E" },\
+${endif}\
+${if_match "$gw_iface"=="wlan0"}\
+ wlan0 on ${addr wlan0} DL: ${downspeed wlan0} UL: ${upspeed wlan0} " , "color" : "\#4C7899" },\
+${endif}\
+${if_match "$gw_iface"=="wwan0"}\
+ wwan0 on ${addr wwan0} DL: ${downspeed wwan0} UL: ${upspeed wwan0} " , "color" : "\#4C7899" },\
+${endif}\
+${if_match "$gw_iface"=="eth0"}\
+ eth0 on ${addr eth0} DL: ${downspeed eth0} UL: ${upspeed eth0} " , "color" : "\#4C7899" },\
+${endif}\
+ 
+{ "full_text" : "" , "color" : "\#4C7899" },
+{ "full_text" : " ${battery_time} / ${battery_percent}% " , "color" : ${if_match ${battery_percent}>16}"\#4C7899"${else}"\#FF173E"${endif} },
+{ "full_text" : " ${time %a %d/%m %R} " , "color" : "\#4C7899" }
+#{ "full_text" : " $gw_iface " , "color" : "\#CCCCCC" }
+ 
+],
