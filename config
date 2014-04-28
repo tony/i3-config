@@ -199,6 +199,8 @@ bar {
   }
 }
 
+for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+
 # class                   border  bg      text    indicator
 client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
 client.focused_inactive   #1b1d1e #1b1d1e #fdf6e3 #484e50
