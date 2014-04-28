@@ -7,7 +7,7 @@ echo '{"version":1}'
 echo '['
 
 # We send an empty first array of blocks to make the loop simpler:
-echo '[],'
+echo '[]'
 
 # Now send blocks with information forever:
 exec conky -c $HOME/.i3/conkyrc
