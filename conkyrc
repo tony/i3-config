@@ -23,7 +23,6 @@ TEXT
 
 
 #  {"full_text": "|", "color":"\#000000"},
-  { "full_text" : "\
   ${if_match "$gw_iface"=="(null)"}\
    Network Unavailable " , "color" : "\#FF173E" },\
   ${endif}\
