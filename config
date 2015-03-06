@@ -197,10 +197,10 @@ bindsym $mod+Shift+z mode "resize"
 # http://i3wm.org/docs/user-contributed/conky-i3bar.html
 bar {
   # use i3status
-  # status_command    i3status
+  status_command    i3status
 
   # use i3pystatus
-  status_command        $HOME/.i3/conky-bar.sh
+  # status_command        $HOME/.i3/conky-bar.sh
   colors {
     background          #181818
     statusline          #f8f8f2
