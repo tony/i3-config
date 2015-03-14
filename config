@@ -27,8 +27,9 @@ bindsym $mod+Shift+C kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
+bindsym $mod+r exec i3-dmenu-desktop --dmenu='dmenu'
 #bindsym $mod+r exec i3-dmenu-desktop --dmenu='dmenu -fn monospace:bold:size=9 -nb "#eee8d5" -nf "#073642" -sb "#dc322f" -p "> "'
-bindsym $mod+r exec i3-dmenu-desktop --dmenu='dmenu -f -fn monospace:bold:size=9 -nb "#eee8d5" -nf "#073642" -sb "#dc322f" -p "> "'
+#bindsym $mod+r exec i3-dmenu-desktop --dmenu='dmenu -f -fn monospace:bold:size=9 -nb "#eee8d5" -nf "#073642" -sb "#dc322f" -p "> "'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -227,9 +228,12 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 
 # nitrogen background changer
 # project: https://github.com/crimsonknave/nitrogen-bg-switcher
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id exec nitrogen --restore
 
 exec --no-startup-id exec fcitx-autostart
 exec --no-startup-id exec compton
+exec --no-startup-id exec nm-applet --sm-disable
+exec --no-startup-id exec ~/.local/bin/flux.sh
+exec --no-startup-id exec parcellite
 
 # vim:filetype=i3
