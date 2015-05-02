@@ -216,6 +216,12 @@ bar {
 }
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+for_window [class="Chromium"]    border 1pixel
+for_window [class="Firefox"]     border 1pixel
+for_window [class="URxvt"]    border none
+for_window [class="dota_linux"]    border none
+for_window [instance="Steam"]    border 1pixel
+for_window [instance="Steam"]    floating enable
 
 # class                   border  bg      text    indicator
 client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
