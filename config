@@ -218,6 +218,7 @@ bar {
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Firefox"]     border 1pixel
+for_window [class="Iceweasel"]     border 1pixel
 for_window [class="URxvt"]    border none
 for_window [class="dota_linux"]    border none
 for_window [instance="Steam"]    border 1pixel
