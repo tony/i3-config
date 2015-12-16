@@ -171,6 +171,7 @@ bar {
 }
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+for_window [class="urxvt"]    border 1pixel
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Google-chrome-stable"]    border 1pixel
 for_window [class="Chrome"]    border 1pixel
