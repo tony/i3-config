@@ -172,6 +172,8 @@ bar {
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Chromium"]    border 1pixel
+for_window [class="Chrome"]    border 1pixel
+for_window [class="Google-chrome" title="Google Chrome"] border none
 for_window [class="Firefox"]     border 1pixel
 for_window [class="Iceweasel"]     border 1pixel
 for_window [class="URxvt"]    border none
@@ -200,4 +202,3 @@ exec --no-startup-id exec compton
 exec --no-startup-id exec nm-applet --sm-disable
 exec --no-startup-id exec ~/.local/bin/flux.sh
 exec --no-startup-id exec parcellite
-
