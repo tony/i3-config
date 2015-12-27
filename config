@@ -182,6 +182,7 @@ for_window [class="Firefox"]     border 1pixel
 for_window [class="Iceweasel"]     border 1pixel
 for_window [class="URxvt"]    border none
 for_window [class="dota_linux"]    border none
+for_window [class="dota2.exe"]    border none
 for_window [class="Blender"]    border none
 for_window [class="Wine" instance="SC2.exe"]    border none
 for_window [instance="Steam"]    border 1pixel; floating enable
