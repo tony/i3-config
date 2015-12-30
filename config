@@ -175,16 +175,16 @@ for_window [class="urxvt"]    border 1pixel
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Google-chrome-stable"]    border 1pixel
 for_window [class="Chrome"]    border 1pixel
-for_window [class="Google-chrome" title="Google Chrome"] border none
-for_window [class="mpv"] border none
+for_window [class="Google-chrome" title="Google Chrome"] border 1pixel
+for_window [class="mpv"] border 1pixel
 for_window [class="chromium-browser"] border 1pixel
 for_window [class="Firefox"]     border 1pixel
 for_window [class="Iceweasel"]     border 1pixel
-for_window [class="URxvt"]    border none
-for_window [class="dota_linux"]    border none
-for_window [class="dota2.exe"]    border none
-for_window [class="Blender"]    border none
-for_window [class="Wine" instance="SC2.exe"]    border none
+for_window [class="URxvt"]    border 1pixel
+for_window [class="dota_linux"]    border 1pixel
+for_window [class="dota2.exe"]    border 1pixel
+for_window [class="Blender"]    border 1pixel
+for_window [class="Wine" instance="SC2.exe"]    border 1pixel
 for_window [instance="Steam"]    border 1pixel; floating enable
 for_window [instance="qsynergy"]    border 1pixel; floating enable
 
