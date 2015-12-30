@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvtcd
@@ -175,6 +175,8 @@ for_window [class="urxvt"]    border 1pixel
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Google-chrome-stable"]    border 1pixel
 for_window [class="Chrome"]    border 1pixel
+for_window [class="chrome"]    border 1pixel
+for_window [class="chromium"]    border 1pixel
 for_window [class="Google-chrome" title="Google Chrome"] border 1pixel
 for_window [class="mpv"] border 1pixel
 for_window [class="chromium-browser"] border 1pixel
