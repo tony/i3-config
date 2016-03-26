@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-# floating_modifier $mod
+floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvtcd
@@ -170,7 +170,7 @@ bar {
         status_command i3status
 }
 
-for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+for_window [class="Xfce4-notifyd"] border none; focus mode_toggle
 for_window [class="urxvt"]    border 1pixel
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Google-chrome-stable"]    border 1pixel
@@ -187,8 +187,8 @@ for_window [class="dota_linux"]    border 1pixel
 for_window [class="dota2.exe"]    border 1pixel
 for_window [class="Blender"]    border 1pixel
 for_window [class="Wine" instance="SC2.exe"]    border 1pixel
-for_window [instance="Steam"]    border 1pixel; floating enable
-for_window [instance="qsynergy"]    border 1pixel; floating enable
+for_window [instance="Steam"]    border 1pixel
+for_window [instance="qsynergy"]    border 1pixel
 
 # class                   border  bg      text    indicator
 client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
