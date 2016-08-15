@@ -189,6 +189,8 @@ for_window [class="Blender"]    border 1pixel
 for_window [class="Wine" instance="SC2.exe"]    border 1pixel
 for_window [instance="Steam"]    border 1pixel
 for_window [instance="qsynergy"]    border 1pixel
+for_window [title="sdl2-playproject"]    floating enable
+
 
 # class                   border  bg      text    indicator
 client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
