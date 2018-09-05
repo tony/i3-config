@@ -194,6 +194,7 @@ for_window [class="dota2.exe"]    border 1pixel
 for_window [class="Blender"]    border 1pixel
 for_window [class="Wine" instance="SC2.exe"]    border 1pixel
 for_window [instance="Steam"]    border 1pixel
+for_window [instance="factorio"]    border 1pixel
 for_window [instance="qsynergy"]    border 1pixel
 for_window [title="sdl2-playproject"]    floating enable
 
