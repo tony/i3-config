@@ -36,7 +36,7 @@ bindsym $mod+Shift+c kill
 bindsym $mod+d exec dmenu_run
 
 # screenshots
-bindsym --release Print exec "scrot -m scrot $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
+bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 bindsym --release Shift+Print exec "scrot -s $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 bindsym --release Mod1+Print exec "scrot -u $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 
