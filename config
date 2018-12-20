@@ -40,6 +40,15 @@ bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshot\ from\ %Y-%m-%d
 bindsym --release Shift+Print exec "scrot -s $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 bindsym --release Mod1+Print exec "scrot -u $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master 5%-"
+bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle
+
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
