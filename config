@@ -33,7 +33,8 @@ bindsym $mod+Return exec urxvtcd
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
 
 # screenshots
 bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
