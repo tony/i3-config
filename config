@@ -231,3 +231,4 @@ exec --no-startup-id exec compton
 exec --no-startup-id exec nm-applet --sm-disable
 exec --no-startup-id exec ~/.local/bin/flux.sh
 exec --no-startup-id exec parcellite
+exec --no-startup-id exec ~/.screenlayout/dual-monitor-2020.sh
