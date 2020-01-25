@@ -188,6 +188,8 @@ bar {
 
 for_window [class="Xfce4-notifyd"] border none; focus mode_toggle
 for_window [class="urxvt"]    border 1pixel
+for_window [class="kitty"]    border 1pixel
+for_window [class="slack"]    border 1pixel
 for_window [class="Chromium"]    border 1pixel
 for_window [class="Google-chrome-stable"]    border 1pixel
 for_window [class="Chrome"]    border 1pixel
