@@ -40,6 +40,7 @@ bindsym $mod+d exec rofi -show run
 bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 bindsym --release Shift+Print exec "scrot -s $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
 bindsym --release Mod1+Print exec "scrot -u $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
+bindsym --release Ctrl+Shift+Print exec "scrot -s /tmp/screenshot.png -e 'xclip -selection clipboard -t \\"image/png\\" < $f'; rm /tmp/screenshot.png"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master 5%+"
