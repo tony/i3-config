@@ -100,6 +100,7 @@ bindsym $mod+Control+h resize shrink width 10 px or 10 ppt
 
 # split in horizontal orientation
 bindsym $mod+Shift+V split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
