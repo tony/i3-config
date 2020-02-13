@@ -226,11 +226,10 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 
 # nitrogen background changer
 # project: https://github.com/crimsonknave/nitrogen-bg-switcher
-exec --no-startup-id exec nitrogen --restore
+exec --no-startup-id exec nitrogen --random --set-centered ~/Pictures/backgrounds
 
 exec --no-startup-id exec fcitx-autostart
 exec --no-startup-id exec compton
 exec --no-startup-id exec nm-applet --sm-disable
 exec --no-startup-id exec ~/.local/bin/flux.sh
 exec --no-startup-id exec parcellite
-exec --no-startup-id exec ~/.screenlayout/dual-monitor-2020.sh
