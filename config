@@ -215,7 +215,8 @@ for_window [title="sdl2-playproject"]    floating enable
 
 
 # class                   border  bg      text    indicator
-client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
+# client.focused            #1b1d1e #1b1d1e #fdf6e3 #2e9ef4
+client.focused #555555 #555555 #ffffff #2e9ef4     #CC0000
 client.focused_inactive   #1b1d1e #1b1d1e #fdf6e3 #484e50
 client.unfocused          #333333 #1b1d1e #fdf6e3 #292d2e
 
