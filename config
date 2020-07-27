@@ -34,7 +34,8 @@ bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run
+bindsym $mod+shift+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 
 # screenshots
 bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
